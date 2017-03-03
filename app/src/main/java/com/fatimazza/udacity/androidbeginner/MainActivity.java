@@ -22,7 +22,10 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the plus button is clicked.
      */
     public void increment(View view) {
-        int quantity = 3;
+        int quantity = 2;
+        quantity = 3;
+        quantity = 4;
+        quantity = 5;
         display(quantity);
     }
 
@@ -30,7 +33,8 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the minus button is clicked.
      */
     public void decrement(View view) {
-        int quantity = 1;
+        int quantity = 2;
+        quantity = 1;
         display(quantity);
     }
 
