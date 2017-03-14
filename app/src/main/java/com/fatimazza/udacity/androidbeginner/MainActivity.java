@@ -51,15 +51,20 @@ public class MainActivity extends AppCompatActivity {
      * @return total price
      */
     private int calculatePrice() {
-        int price = quantity * 5;
-        return price;
+        return quantity * 5;
     }
 
+    /**
+     * Create summary of the order
+     *
+     * @param price for the order
+     * @return text summary
+     */
     private String createOrderSummary(int price){
         String priceMessage = "Name: Kaptain Kunal";
-        priceMessage = priceMessage + "Quantity: " +quantity;
-        priceMessage = priceMessage + "Total: $" + price;
-        priceMessage = priceMessage + "\nThank You!";
+        priceMessage += "\nQuantity: " +quantity;
+        priceMessage += "\nTotal: $" + price;
+        priceMessage += "\nThank You!";
         return priceMessage;
     }
 
