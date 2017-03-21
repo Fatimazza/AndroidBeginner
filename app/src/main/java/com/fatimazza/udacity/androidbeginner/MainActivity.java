@@ -2,7 +2,9 @@ package com.fatimazza.udacity.androidbeginner;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 import java.text.NumberFormat;
@@ -40,6 +42,10 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
+        CheckBox whippedCreamCheckBox = (CheckBox) findViewById(R.id.whipped_cream_checkbox);
+        boolean hasWhippedCream = whippedCreamCheckBox.isChecked();
+        Log.v("Main Activity", "Has whipped cream: " +hasWhippedCream);
+
         int price = calculatePrice();
         String priceMessage = createOrderSummary(price);
         displayMessage(priceMessage);
