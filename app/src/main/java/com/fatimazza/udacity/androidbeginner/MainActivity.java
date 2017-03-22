@@ -2,12 +2,10 @@ package com.fatimazza.udacity.androidbeginner;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
-import java.text.NumberFormat;
 
 /**
  * This app displays an order form to order coffee.
